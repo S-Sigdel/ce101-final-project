@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(background.jpg)
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+button:active,
+button.enlarged {
+    transform: scale(1.3);
+    background-color: #0056b3;
+}
+
+/* Styling for steering wheel */
+#steering-wheel {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #444;
+    border-radius: 50%;
+    background: radial-gradient(circle, #666, #222);
+    position: relative;
+    margin: 20px;
+}
+
+.wheel-inner {
+    width: 100px;
+    height: 100px;
+    background: #555;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Extra buttons styling */
+#extra-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#extra-buttons button {
+    width: 40px;
+    height: 40px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#extra-buttons button:active {
+    background-color: #1e7e34;
+    transform: scale(1.2);
+}
